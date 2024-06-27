@@ -72,3 +72,5 @@ searchButton.addEventListener("click", () => {
     curSelectedItem?.classList.remove("active");
     curSelectedItem = null;
 });
+
+
