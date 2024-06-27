@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News24</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#"  onclick="reload()" class="company-logo">
+                <img src="News 24_transparent.png" alt="logo">
+            </a>
+            <div class="nav-link">
+                <ul class="flex">
+                    <li class="hover-link nav-items " id="stocks market" onclick="onNavItemClick('stocks market')">
+                        Stocks</li>
+                    <li class="hover-link nav-items  " id="cryptocurrency" onclick="onNavItemClick('cryptocurrency')">
+                        Cryptocurrenct</li>
+                    <li class="hover-link nav-items " id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                    <li class="hover-link nav-items " id="education" onclick="onNavItemClick('education')"> Education
+                    </li>
+                    <li class="hover-link nav-items " id="T20worldcup" onclick="onNavItemClick('T20worldcup')">T20 WC'24
+                    </li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input id="search-text" type="text" class="news-input" placeholder="Search News">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards-container container flex " id="cards-container">
+
+        </div>
+    </main>
+
+
+
+
+
+    <footer>
+        <div class="footer">
+           
+        <p class="footer-p">
+          <span>Terms of Use/</span>  
+           <span>Privacy Policy</span> 
+        </p>
+        <p class="footer-p">Copyright © 2024 News 24 [P] Ltd. All Rights Reserved </p>
+        </div>
+    </footer>
+
+
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="card image" id="news-img">
+            </div>
+
+            <div class="card-content">
+                <h3 id="news-title">this is title</h3>
+                <h6 class="news-source" id="news-source">End gardet </h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+                    voluptate,
+                    saepe
+                    voluptates, cumque provident sint facere amet ea quaerat quibusdam aliquam laborum minus? Quam
+                    nulla
+                    amet neque quasi cupiditate, error culpa ea repellendus recusandae!</p>
+            </div>
+        </div>
+    </template>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
