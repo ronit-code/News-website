@@ -52,7 +52,6 @@ function fillDataInCard(cardClone, article) {
     })
 };
 
-
 let curSelectedItem = null;
 function onNavItemClick(id) {
     fetchNews(id);
